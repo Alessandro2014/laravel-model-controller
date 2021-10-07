@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Movies | @yield('')</title>
 </head>
-<body>
+<body>        
+    @include('includes.header')
+
     <main>
         @yield('content')
-        <h1>Welcome</h1>
+        <h1>Welcome in main</h1>
+
     </main>
 </body>
 </html>

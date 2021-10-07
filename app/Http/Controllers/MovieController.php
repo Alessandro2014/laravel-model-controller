@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ovie;
+use App\Models\Movie;
 
 class MovieController extends Controller
 {
     //
     public function index(){
-        $movies = [];
+        $movies = Movie::all();
         dd($movies);
-        return view('index', compact('movies'));
+        return view('movies.index', compact('movies'));
     }
 }
